@@ -331,7 +331,56 @@ namespace Asr_V3 {
             basic.pause(100);
         }
 
-       }
+    }
 
+
+    //% blockId=Set_0_Word block="设置唤醒词拼音为 %str"
+    //% weight=88
+    //% blockGap=10
+    //% color="#3CB371"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Set_0_Word(str: string): void { 
+        Asr_Add_Words(0, str)
+        Wait_Asr_Busy()
+    }
+
+
+    //% blockId=Set_Smart_Home_Word block="增加常用命令词（智能家居15条）"
+    //% weight=88
+    //% blockGap=10
+    //% color="#3CB371"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Set_Smart_Home_Word(): void { 
+        Asr_Add_Words(1, "hong deng")  //红灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(2, "lv deng")  //绿灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(3, "lan deng") //蓝灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(4, "bi deng") //闭灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(5, "tai gan") //抬杆
+        Wait_Asr_Busy()
+        Asr_Add_Words(6, "luo gan") //落杆
+        Wait_Asr_Busy()
+        Asr_Add_Words(7, "kai deng") //开灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(8, "guan deng") //关灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(9, "kai feng shan") //开风扇
+        Wait_Asr_Busy()
+        Asr_Add_Words(10, "guan feng shan") //关风扇
+        Wait_Asr_Busy()
+        Asr_Add_Words(11, "tian wang gai di hu") //天王盖地虎
+        Wait_Asr_Busy()
+        Asr_Add_Words(12, "bo fang liu yan") //播放留言
+        Wait_Asr_Busy()
+        Asr_Add_Words(13, "kai men") //开门
+        Wait_Asr_Busy()
+        Asr_Add_Words(14, "guan men") //关门
+        Wait_Asr_Busy()
+        Asr_Add_Words(15, "wo yao kan dian shi") //我要看电视
+        Wait_Asr_Busy()
+    }
  
 }
