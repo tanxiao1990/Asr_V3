@@ -124,7 +124,7 @@ namespace Asr_V3 {
     //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12  
-    export function Asr_Set_RGB(value1: number, value2: number, value3: number): void {
+    function Asr_Set_RGB(value1: number, value2: number, value3: number): void {
         setPwmRGB(value1, value2, value3);
     }
 
@@ -215,7 +215,7 @@ namespace Asr_V3 {
     //% weight=94
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12 
-    export function Asr_Buzzer(buzzer_state: Buzzer_State): void {
+    function Asr_Buzzer(buzzer_state: Buzzer_State): void {
         let buf = pins.createBuffer(2);
         buf[0] = ASR_BUZZER;
         buf[1] = buzzer_state;
@@ -230,7 +230,7 @@ namespace Asr_V3 {
     //% weight=93
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12 
-    export function Asr_Key_ON(): void {
+    function Asr_Key_ON(): void {
         let buf = pins.createBuffer(2);
         buf[0] = ASR_KEY_FLAG;
         buf[1] = 1;
@@ -261,7 +261,7 @@ namespace Asr_V3 {
     //% blockGap=10
     //% color="#3CB371"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Asr_NUM_Cleck(): number {
+    function Asr_NUM_Cleck(): number {
 
         let buf = pins.createBuffer(1);
         buf[0] = ASR_NUM_CLECK;       
@@ -292,7 +292,7 @@ namespace Asr_V3 {
     //% blockGap=10
     //% color="#3CB371"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Read_Firmware_Version(): number {
+    function Read_Firmware_Version(): number {
 
         let buf = pins.createBuffer(1);
         buf[0] = FIRMWARE_VERSION;       
@@ -308,7 +308,7 @@ namespace Asr_V3 {
     //% blockGap=10
     //% color="#3CB371"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Asr_Busy_Date(): number {
+    function Asr_Busy_Date(): number {
 
         let buf = pins.createBuffer(1);
         buf[0] = ASR_BUSY;       
