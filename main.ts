@@ -345,7 +345,7 @@ namespace Asr_V3 {
     }
 
 
-    //% blockId=Set_Smart_Home_Word block="增加常用命令词（智能家居40条）"
+    //% blockId=Set_Smart_Home_Word block="增加常用命令词（智能家居42条）"
     //% weight=88
     //% blockGap=10
     //% color="#3CB371"
@@ -410,6 +410,10 @@ namespace Asr_V3 {
         Asr_Add_Words(17, "guan chu fang deng") //关厨房灯
         Wait_Asr_Busy()
         Asr_Add_Words(17, "chu fang guan deng") //厨房关灯  +1
+        Wait_Asr_Busy()
+        Asr_Add_Words(18, "wen du za yang") //温度咋样
+        Wait_Asr_Busy()
+        Asr_Add_Words(18, "shi du za yang") //湿度咋样 +1
         Wait_Asr_Busy()
 
         //添加垃圾关键词  增加识别成功率
