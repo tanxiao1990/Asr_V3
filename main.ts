@@ -345,7 +345,7 @@ namespace Asr_V3 {
     }
 
 
-    //% blockId=Set_Smart_Home_Word block="增加常用命令词（智能家居15条）"
+    //% blockId=Set_Smart_Home_Word block="增加常用命令词（智能家居40条）"
     //% weight=88
     //% blockGap=10
     //% color="#3CB371"
@@ -361,25 +361,77 @@ namespace Asr_V3 {
         Wait_Asr_Busy()
         Asr_Add_Words(5, "tai gan") //抬杆
         Wait_Asr_Busy()
+        Asr_Add_Words(5, "tai qi gan zi") //抬起杆子  +1
+        Wait_Asr_Busy()
         Asr_Add_Words(6, "luo gan") //落杆
+        Wait_Asr_Busy()
+        Asr_Add_Words(6, "luo xia gan zi") //落杆   +1 
         Wait_Asr_Busy()
         Asr_Add_Words(7, "kai deng") //开灯
         Wait_Asr_Busy()
+        Asr_Add_Words(7, "ba deng da kai") //把灯打开 +1
+        Wait_Asr_Busy()
         Asr_Add_Words(8, "guan deng") //关灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(8, "ba deng guan le") //把灯关了  +1
         Wait_Asr_Busy()
         Asr_Add_Words(9, "kai feng shan") //开风扇
         Wait_Asr_Busy()
+        Asr_Add_Words(9, "re si le") //热死了   +1
+        Wait_Asr_Busy()
         Asr_Add_Words(10, "guan feng shan") //关风扇
+        Wait_Asr_Busy()
+        Asr_Add_Words(10, "guan bi feng shan") //关闭风扇 +1
         Wait_Asr_Busy()
         Asr_Add_Words(11, "tian wang gai di hu") //天王盖地虎
         Wait_Asr_Busy()
+        Asr_Add_Words(11, "wo shi ni die") //我是你爹  +1
+        Wait_Asr_Busy()
         Asr_Add_Words(12, "bo fang liu yan") //播放留言
+        Wait_Asr_Busy()
+        Asr_Add_Words(12, "ting liu yan") //听留言  +1
         Wait_Asr_Busy()
         Asr_Add_Words(13, "kai men") //开门
         Wait_Asr_Busy()
+        Asr_Add_Words(13, "ba men da kai") //把门打开  +1
+        Wait_Asr_Busy()
         Asr_Add_Words(14, "guan men") //关门
         Wait_Asr_Busy()
+        Asr_Add_Words(14, "ba men guan shang") //把门关上  +1
+        Wait_Asr_Busy()
         Asr_Add_Words(15, "wo yao kan dian shi") //我要看电视
+        Wait_Asr_Busy()
+        Asr_Add_Words(15, "xiang kan dian shi") //想看电视  +1
+        Wait_Asr_Busy()
+        Asr_Add_Words(16, "kai chu fang deng") //开厨房灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(16, "chu fang kai deng") //厨房开灯 +1
+        Wait_Asr_Busy()
+        Asr_Add_Words(17, "guan chu fang deng") //关厨房灯
+        Wait_Asr_Busy()
+        Asr_Add_Words(17, "chu fang guan deng") //厨房关灯  +1
+        Wait_Asr_Busy()
+
+        //添加垃圾关键词  增加识别成功率
+        Asr_Add_Words(200, "kai chuang") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "guan shu") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "kai lao ban") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "guan jin bi") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "bo zhong chun tian") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "wo ren bu tai shuai") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "tai bu le jiao") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "luo ri hao kan") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "tian xia da luan le") 
+        Wait_Asr_Busy()
+        Asr_Add_Words(200, "chu e wu jin") 
         Wait_Asr_Busy()
     }
  
